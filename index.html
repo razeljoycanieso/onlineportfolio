@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razel Joy Canieso | Computer Engineering Student</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+    }
+    
+    .nav-blur {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .certificate-gallery {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      overflow: auto;
+      padding: 20px;
+    }
+    
+    .certificate-gallery.active {
+      display: block;
+    }
+    
+    .mobile-menu {
+      display: none;
+    }
+    
+    .mobile-menu.active {
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .desktop-menu {
+        display: none;
+      }
+    }
+    
+    .project-video {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .project-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <span>Portfolio</span>
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#resume" class="nav-item">Resume</a></li>
+          <li><a href="#contact" class="nav-item contact-btn">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Razel Joy Canieso</span></h1>
+          <h2>Computer Engineering Student</h2>
+          <p class="hero-description">I create innovative solutions with modern technologies, specializing in embedded systems, robotics, and software development.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="C:\Users\Admin\Documents\onlineport\images\me.jpg" alt="Profile Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="C:\Users\Admin\Documents\onlineport\images\me.jpg" alt="About Me Image" class="rounded-image">
+        </div>
+        <div class="about-text">
+          <p>I'm a Computer Engineering student passionate about technology, coding, and innovation. I enjoy working on hands-on projects involving embedded systems, robotics, and software development. Whether it's building intelligent systems, writing efficient code, or designing practical user interfaces, I'm always looking for ways to improve and learn. I aim to grow as a well-rounded engineer by exploring new tools, collaborating on creative ideas, and applying my skills to real-world challenges.</p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>razeljoypeguitcanieso@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Baclayon, Bohol, Philippines</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.S. in Computer Engineering</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-content">
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <h4>HTML</h4>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <h4>CSS</h4>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-js"></i></div>
+              <h4>JavaScript</h4>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <h4>Python</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <iframe 
+              src="https://www.youtube.com/embed/W1-KXkshtJg" 
+              title="SumoHockeyBot" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <h3>Sumobot | Hockeybot</h3>
+            <p>A SumoHockeyBot is a compact robot that combines sumo wrestling and hockey—designed to detect opponents or a puck, push, block, and score in a competitive arena.</p>
+            <div class="project-tags">
+              <span class="tag">Robotics</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Sensors</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <iframe 
+              src="https://www.youtube.com/embed/mBcuqCH5C6o" 
+              title="Numerical Method Matlab" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <h3>Numerical Methods MATLAB</h3>
+            <p>Implementation of various numerical methods and algorithms using MATLAB for solving mathematical problems and data analysis.</p>
+            <div class="project-tags">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Mathematics</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <iframe 
+              src="https://www.youtube.com/embed/fFMEJQ5rTvw" 
+              title="Demo Root-finder" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <h3>Root Finder Application</h3>
+            <p>A mathematical application that implements various root-finding algorithms to solve equations and find function zeros.</p>
+            <div class="project-tags">
+              <span class="tag">Programming</span>
+              <span class="tag">Mathematics</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Resume</h2>
+        <div class="underline"></div>
+      </div>
+        
+      <div class="cv-container">
+        <div class="cv-header">
+          <div class="cv-name">
+            <h3>Razel Joy P. Canieso</h3>
+            <p>Engineering Student</p>
+          </div>
+          <div class="cv-contact">
+            <p><i class="fas fa-envelope"></i> razeljoypeguitcanieso@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 09458633172</p>
+            <p><i class="fas fa-map-marker-alt"></i> Baclayon, Bohol</p>
+          </div>
+        </div>
+        
+        <!-- Personal Information -->
+        <div class="cv-section">
+          <h3 class="cv-section-title">Personal Information</h3>
+          <div class="info-grid">
+            <div class="info-item">
+              <h4>Date of Birth</h4>
+              <p>January 15, 2005</p>
+            </div>
+            <div class="info-item">
+              <h4>Languages</h4>
+              <p>Bisaya, English, Filipino</p>
+            </div>
+            <div class="info-item">
+              <h4>Nationality</h4>
+              <p>Filipino</p>
+            </div>
+            <div class="info-item">
+              <h4>Interests</h4>
+              <p>Web Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="cv-section">
+          <h3 class="cv-section-title">Education</h3>
+          
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <h4>Bachelor of Science in Computer Engineering</h4>
+              <span class="cv-date">2023 - Present</span>
+            </div>
+            <h5>University of Bohol</h5>
+            <p>Currently pursuing a degree in Computer Engineering with a focus on web development and software engineering.</p>
+            <p>Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development, Software Design</p>
+          </div>
+          
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <h4>High School Diploma</h4>
+              <span class="cv-date">2016 - 2020</span>
+            </div>
+            <h5>Corella National High School</h5>
+            <p>Graduated with honors. Participated in TVL-Cookery</p>
+          </div>
+        </div>
+        
+        <!-- Certificates -->
+        <div class="cv-section">
+          <h3 class="cv-section-title">Certificates</h3>
+          <button class="certificate-button" id="certificateButton">
+            <i class="fas fa-certificate"></i> Certificate
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Gallery Modal -->
+  <div class="certificate-gallery" id="certificateGallery">
+    <div class="gallery-container">
+      <h2 class="gallery-title">My Certificates</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="c:C:\Users\Admin\Documents\onlineport\images\1.png" alt="Certificate 1">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\2.png" alt="Certificate 2">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\3.jpg" alt="Certificate 3">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\4.png" alt="Certificate 4">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\5.png" alt="Certificate 5">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\6.jpg" alt="Certificate 6">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\8.png" alt="Certificate 8">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\9.png" alt="Certificate 9">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\10.jpeg" alt="Certificate 10">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\12.png" alt="Certificate 12">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\13.jpg" alt="Certificate 13">
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\Admin\Documents\onlineport\images\14.jpg" alt="Certificate 14">
+        </div>
+      </div>
+      <button class="gallery-close" id="closeGallery"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Baclayon, Bohol, Philippines</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>razeljoypeguitcanieso@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>09458633172</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>Portfolio</span>
+        </div>
+        <div class="footer-text">
+          <p>&copy; 2025 Razel Joy Canieso. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed with <i class="fas fa-heart"></i> by Razel Joy Canieso</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector('.nav-links').classList.remove('active');
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add active class to navigation items on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section');
+      const navItems = document.querySelectorAll('.nav-item');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${current}`) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // Certificate Gallery Functionality
+    const certButton = document.getElementById('certificateButton');
+    const certGallery = document.getElementById('certificateGallery');
+    const closeButton = document.getElementById('closeGallery');
+    
+    // Open gallery when the Certificate button is clicked
+    certButton.addEventListener('click', function() {
+      openGallery();
+    });
+    
+    // Close gallery
+    closeButton.addEventListener('click', closeGallery);
+    
+    // Close gallery when clicking outside the gallery content
+    certGallery.addEventListener('click', function(e) {
+      if (e.target === certGallery) {
+        closeGallery();
+      }
+    });
+    
+    // Keyboard navigation (Escape to close)
+    document.addEventListener('keydown', function(e) {
+      if (!certGallery.classList.contains('active')) return;
+      
+      if (e.key === 'Escape') {
+        closeGallery();
+      }
+    });
+    
+    // Open gallery
+    function openGallery() {
+      certGallery.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+    
+    // Close gallery
+    function closeGallery() {
+      certGallery.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+  </script>
+
+  <style>
+    /* Additional styles for certificate gallery and project videos */
+    .certificate-button {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: all 0.3s ease;
+      background-color: #4a6cf7;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 10px;
+      border: none;
+    }
+    
+    .certificate-button:hover {
+      background-color: #3a5bd9;
+      transform: translateY(-2px);
+    }
+    
+    .certificate-button i {
+      margin-right: 5px;
+    }
+    
+    .certificate-gallery {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      z-index: 1000;
+      overflow: auto;
+      padding: 50px 20px;
+    }
+    
+    .certificate-gallery.active {
+      display: block;
+    }
+    
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .gallery-item {
+      position: relative;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .gallery-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255,255,255,0.7);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1001;
+    }
+    
+    .gallery-close:hover {
+      background-color: white;
+    }
+    
+    .gallery-title {
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .project-image {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+    }
+  </style>
+</body>
+</html>
