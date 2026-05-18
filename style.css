@@ -265,15 +265,9 @@ nav {
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
 }
 
 .wave-divider {
@@ -545,7 +539,6 @@ nav {
   margin: 0 auto;
 }
 
-/* CV Container Styles */
 .cv-container {
   background-color: var(--bg-white);
   border-radius: var(--border-radius);
@@ -833,25 +826,25 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .hero-text {
     padding-right: 0;
     margin-bottom: 50px;
   }
-  
+
   .hero-buttons {
     justify-content: center;
   }
-  
+
   .about-content {
     flex-direction: column;
   }
-  
+
   .cv-header {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .cv-name {
     margin-bottom: 15px;
   }
@@ -871,46 +864,46 @@ footer {
     transform: translateY(-150%);
     transition: var(--transition);
   }
-  
+
   .nav-links.active {
     transform: translateY(0);
   }
-  
+
   .nav-links li {
     margin: 15px 0;
   }
-  
+
   .menu-toggle {
     display: block;
   }
-  
+
   .hero-text h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-text h2 {
     font-size: 1.5rem;
   }
-  
+
   .image-container {
     width: 250px;
     height: 250px;
   }
-  
+
   .section-header h2 {
     font-size: 2rem;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-  
+
   .info-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-  
+
   .cv-skills {
     grid-template-columns: 1fr;
   }
@@ -920,38 +913,38 @@ footer {
   .hero-text h1 {
     font-size: 2rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .image-container {
     width: 200px;
     height: 200px;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-content {
     grid-template-columns: 1fr;
   }
-  
+
   .info-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .cv-container {
     padding: 20px;
   }
-  
+
   .cv-item-header {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .cv-date {
     margin-top: 5px;
   }
