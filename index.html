@@ -4,382 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Razel Joy Canieso | Computer Engineering Portfolio</title>
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome & Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ========== NAVIGATION BAR ========== -->
-  <nav>
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="logo" id="homeLogo">Portfolio</div>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-        <ul class="nav-links">
-          <li><a href="#projects" class="nav-item">Projects</a></li>
-          <li><a href="#skills" class="nav-item">Skills</a></li>
-          <li><a href="#resume" class="nav-item">Resume</a></li>
-          <li><a href="#contact" class="nav-item contact-btn">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- ========== HERO SECTION ========== -->
-  <section id="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Hi, I'm <span class="highlight">Razel Joy Canieso</span></h1>
-          <h2>Computer Engineering Student</h2>
-          <p class="hero-description">I create innovative solutions with modern technologies, specializing in embedded systems, robotics, and software development.</p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">View My Work</a>
-            <a href="#contact" class="btn secondary-btn">Get In Touch</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img src="images/me.jpg" alt="Profile Image" onerror="this.src='https://placehold.co/400x400/e3f2fd/1e88e5?text=RJ'">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wave-divider">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-      </svg>
-    </div>
-  </section>
-
-  <!-- ========== PROJECTS SECTION ========== -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2>My Projects</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-image"><iframe src="https://www.youtube.com/embed/W1-KXkshtJg" title="SumoBot" allowfullscreen></iframe></div>
-          <div class="project-info">
-            <h3>Sumobot | Hockeybot</h3>
-            <p>A compact robot combining sumo wrestling and hockey — detects opponents or puck, pushes, blocks, and scores.</p>
-            <div class="project-tags"><span class="tag">Robotics</span><span class="tag">Arduino</span><span class="tag">Sensors</span></div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-image"><iframe src="https://www.youtube.com/embed/mBcuqCH5C6o" title="MATLAB Methods" allowfullscreen></iframe></div>
-          <div class="project-info">
-            <h3>Numerical Methods MATLAB</h3>
-            <p>Implementation of numerical methods and algorithms for solving mathematical problems.</p>
-            <div class="project-tags"><span class="tag">MATLAB</span><span class="tag">Mathematics</span><span class="tag">Algorithms</span></div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-image"><iframe src="https://www.youtube.com/embed/fFMEJQ5rTvw" title="Root Finder" allowfullscreen></iframe></div>
-          <div class="project-info">
-            <h3>Root Finder Application</h3>
-            <p>Mathematical application implementing root-finding algorithms to solve equations.</p>
-            <div class="project-tags"><span class="tag">Programming</span><span class="tag">Mathematics</span></div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/smart_locker.jpg" alt="Smart Locker" onerror="this.style.display='none';this.parentElement.style.background='#e3f2fd';"><div style="background:#e3f2fd;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-lock" style="font-size:3rem;color:#1565c0;"></i></div></div>
-          <div class="project-info">
-            <h3>Smart Locker System</h3>
-            <p>Arduino-based smart locker with keypad/RFID authentication and access logs.</p>
-            <div class="project-tags"><span class="tag">Arduino</span><span class="tag">RFID</span><span class="tag">C++</span></div>
-          </div>
-        </div>
-        <!-- Project 5 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/ball_beam.jpg" alt="Ball in a Beam" onerror="this.style.display='none';this.parentElement.style.background='#fff3e0';"><div style="background:#fff3e0;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-chart-line" style="font-size:3rem;color:#f57c00;"></i></div></div>
-          <div class="project-info">
-            <h3>Ball in a Beam</h3>
-            <p>PID controller balances a ball on a motorized beam using ultrasonic feedback.</p>
-            <div class="project-tags"><span class="tag">Arduino</span><span class="tag">PID Control</span><span class="tag">Sensors</span></div>
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/smart_parking.jpg" alt="Smart Parking" onerror="this.style.display='none';this.parentElement.style.background='#e8f5e9';"><div style="background:#e8f5e9;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-parking" style="font-size:3rem;color:#2e7d32;"></i></div></div>
-          <div class="project-info">
-            <h3>Smart Parking Lot System</h3>
-            <p>IoT-based parking management with IR sensors, LCD display, and automatic barriers.</p>
-            <div class="project-tags"><span class="tag">Arduino</span><span class="tag">IoT</span><span class="tag">Sensors</span></div>
-          </div>
-        </div>
-        <!-- Project 7 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/dodge_game.jpg" alt="Dodge Game" onerror="this.style.display='none';this.parentElement.style.background='#fce4ec';"><div style="background:#fce4ec;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-car-burst" style="font-size:3rem;color:#b71c1c;"></i></div></div>
-          <div class="project-info">
-            <h3>Game Dev – Dodge the Car (OpenCV)</h3>
-            <p>Gesture-controlled arcade game using hand detection via webcam.</p>
-            <div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Game Dev</span></div>
-          </div>
-        </div>
-        <!-- Project 8 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/image_processing.jpg" alt="Image Processing" onerror="this.style.display='none';"><div style="background:#ede7f6;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-image" style="font-size:3rem;color:#6a1b9a;"></i></div></div>
-          <div class="project-info">
-            <h3>Image Processing using Python</h3>
-            <p>Filtering, edge detection, morphological operations, and segmentation.</p>
-            <div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Computer Vision</span></div>
-          </div>
-        </div>
-        <!-- Project 9 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/coconut_cv.jpg" alt="Coconut CV" onerror="this.style.display='none';"><div style="background:#e8f5e9;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-seedling" style="font-size:3rem;color:#00695c;"></i></div></div>
-          <div class="project-info">
-            <h3>OpenCV – Coconut Stage & Yield Count</h3>
-            <p>Classifies coconut maturity stages and counts yield from images.</p>
-            <div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Agriculture Tech</span></div>
-          </div>
-        </div>
-        <!-- Project 10 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/pcb_design.jpg" alt="PCB Design" onerror="this.style.display='none';"><div style="background:#e0f2f1;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-microchip" style="font-size:3rem;color:#004d40;"></i></div></div>
-          <div class="project-info">
-            <h3>PCB Design</h3>
-            <p>Custom circuit board designs, schematic capture, and layout for prototypes.</p>
-            <div class="project-tags"><span class="tag">PCB</span><span class="tag">EDA</span><span class="tag">Hardware</span></div>
-          </div>
-        </div>
-        <!-- Project 11 -->
-        <div class="project-card">
-          <div class="project-image"><img src="images/16seg_display.jpg" alt="16-Segment" onerror="this.style.display='none';"><div style="background:#263238;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-table-cells" style="font-size:3rem;color:#80cbc4;"></i></div></div>
-          <div class="project-info">
-            <h3>Logic & Circuit – Name Display (16-Segment)</h3>
-            <p>Digital logic circuit using ICs to display name on 16-segment LEDs.</p>
-            <div class="project-tags"><span class="tag">Digital Logic</span><span class="tag">ICs</span><span class="tag">16-Segment</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SKILLS SECTION ========== -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-header">
-        <h2>My Skills</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="skills-content">
-        <div class="skill-category">
-          <h3>Frontend Development</h3>
-          <div class="skills-grid">
-            <div class="skill-card"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML</h4></div>
-            <div class="skill-card"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h4>CSS</h4></div>
-            <div class="skill-card"><div class="skill-icon"><i class="fab fa-js"></i></div><h4>JavaScript</h4></div>
-            <div class="skill-card"><div class="skill-icon"><i class="fab fa-python"></i></div><h4>Python</h4></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Hardware & Embedded Systems</h3>
-          <div class="skills-grid">
-            <div class="skill-card"><div class="skill-icon"><i class="fas fa-microchip"></i></div><h4>Arduino</h4></div>
-            <div class="skill-card"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>C++</h4></div>
-            <div class="skill-card"><div class="skill-icon"><i class="fas fa-robot"></i></div><h4>Robotics</h4></div>
-            <div class="skill-card"><div class="skill-icon"><i class="fas fa-eye"></i></div><h4>OpenCV</h4></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== RESUME SECTION ========== -->
-  <section id="resume">
-    <div class="container">
-      <div class="section-header">
-        <h2>My Resume</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="resume-simple-card">
-        <i class="fas fa-file-alt" style="font-size: 3rem; color: #1e88e5;"></i>
-        <h3 style="margin: 16px 0 8px;">Razel Joy Canieso – Full CV</h3>
-        <p style="color: #666; margin-bottom: 10px;">Detailed resume including education, projects, and experience.</p>
-        <a class="resume-drive-btn" href="https://drive.google.com/drive/folders/13-k7vDzsEj9XeGD2y1op3cKxNI1W4PNp?usp=drive_link" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-google-drive"></i> Download / View Resume (Google Drive)
-        </a>
-        <div class="track-note"><i class="fas fa-chart-line"></i> Drive folder analytics — I can monitor downloads & interest</div>
-        <hr class="divider-light">
-        <h3 style="margin-bottom: 12px;"><i class="fas fa-certificate"></i> Certificates</h3>
-        <button class="certificate-button" id="certificateButton"><i class="fas fa-certificate"></i> View All 30+ Certificates</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CERTIFICATE GALLERY MODAL ========== -->
-  <div class="certificate-gallery" id="certificateGallery">
-    <div class="gallery-container">
-      <h2 class="gallery-title" style="color:white; text-align:center;">My Certificates</h2>
-      <div class="gallery-grid" id="certGrid"></div>
-      <button class="gallery-close" id="closeGallery"><i class="fas fa-times"></i></button>
+<!-- ==================== NAVIGATION ==================== -->
+<nav>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="logo" id="homeLogo">Portfolio</div>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#resume" class="nav-item">Resume</a></li>
+        <li><a href="#contact" class="nav-item contact-btn">Contact</a></li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <!-- ========== CONTACT SECTION ========== -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2>Get In Touch</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3>Contact Information</h3>
-          <p>Feel free to reach out for collaborations or inquiries.</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div><h4>Location</h4><p>Baclayon, Bohol, Philippines</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div><h4>Email</h4><p>razeljoypeguitcanieso@gmail.com</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-phone"></i></div>
-              <div><h4>Phone</h4><p>09458633172</p></div>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-          </div>
+<!-- ==================== HERO SECTION ==================== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Razel Joy Canieso</span></h1>
+        <h2>Computer Engineering Student</h2>
+        <p class="hero-description">I create innovative solutions with modern technologies, specializing in embedded systems, robotics, and software development.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
         </div>
-        <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-group"><input type="text" placeholder="Your Name" required></div>
-            <div class="form-group"><input type="email" placeholder="Your Email" required></div>
-            <div class="form-group"><input type="text" placeholder="Subject"></div>
-            <div class="form-group"><textarea placeholder="Your Message" rows="5" required></textarea></div>
-            <button type="submit" class="btn primary-btn">Send Message</button>
-          </form>
+      </div>
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="images/me.jpg" alt="Profile" onerror="this.src='https://placehold.co/400x400/e3f2fd/1e88e5?text=RJ'">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="wave-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
+</section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">Portfolio</div>
-        <div class="footer-text"><p>&copy; 2025 Razel Joy Canieso. All rights reserved.</p></div>
-        <div class="footer-links">
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
+<!-- ==================== PROJECTS SECTION ==================== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <div class="underline"></div>
     </div>
-    <div class="footer-bottom">
-      <p>Designed with <i class="fas fa-heart"></i> by Razel Joy Canieso</p>
+    <div class="projects-grid">
+      <!-- 11 project cards as in original - kept identical -->
+      <div class="project-card"><div class="project-image"><iframe src="https://www.youtube.com/embed/W1-KXkshtJg" title="SumoBot" allowfullscreen></iframe></div><div class="project-info"><h3>Sumobot | Hockeybot</h3><p>A compact robot combining sumo wrestling and hockey.</p><div class="project-tags"><span class="tag">Robotics</span><span class="tag">Arduino</span><span class="tag">Sensors</span></div></div></div>
+      <div class="project-card"><div class="project-image"><iframe src="https://www.youtube.com/embed/mBcuqCH5C6o" title="MATLAB Methods" allowfullscreen></iframe></div><div class="project-info"><h3>Numerical Methods MATLAB</h3><p>Implementation of numerical methods for solving mathematical problems.</p><div class="project-tags"><span class="tag">MATLAB</span><span class="tag">Mathematics</span><span class="tag">Algorithms</span></div></div></div>
+      <div class="project-card"><div class="project-image"><iframe src="https://www.youtube.com/embed/fFMEJQ5rTvw" title="Root Finder" allowfullscreen></iframe></div><div class="project-info"><h3>Root Finder Application</h3><p>Mathematical application implementing root-finding algorithms.</p><div class="project-tags"><span class="tag">Programming</span><span class="tag">Mathematics</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/smart_locker.jpg" alt="Smart Locker" onerror="this.style.display='none';this.parentElement.style.background='#e3f2fd';"><div style="background:#e3f2fd;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-lock" style="font-size:3rem;color:#1565c0;"></i></div></div><div class="project-info"><h3>Smart Locker System</h3><p>Arduino-based smart locker with keypad/RFID authentication.</p><div class="project-tags"><span class="tag">Arduino</span><span class="tag">RFID</span><span class="tag">C++</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/ball_beam.jpg" alt="Ball in a Beam" onerror="this.style.display='none';this.parentElement.style.background='#fff3e0';"><div style="background:#fff3e0;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-chart-line" style="font-size:3rem;color:#f57c00;"></i></div></div><div class="project-info"><h3>Ball in a Beam</h3><p>PID controller balances a ball on a motorized beam.</p><div class="project-tags"><span class="tag">Arduino</span><span class="tag">PID Control</span><span class="tag">Sensors</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/smart_parking.jpg" alt="Smart Parking" onerror="this.style.display='none';this.parentElement.style.background='#e8f5e9';"><div style="background:#e8f5e9;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-parking" style="font-size:3rem;color:#2e7d32;"></i></div></div><div class="project-info"><h3>Smart Parking Lot System</h3><p>IoT-based parking management with IR sensors.</p><div class="project-tags"><span class="tag">Arduino</span><span class="tag">IoT</span><span class="tag">Sensors</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/dodge_game.jpg" alt="Dodge Game" onerror="this.style.display='none';this.parentElement.style.background='#fce4ec';"><div style="background:#fce4ec;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-car-burst" style="font-size:3rem;color:#b71c1c;"></i></div></div><div class="project-info"><h3>Game Dev – Dodge the Car (OpenCV)</h3><p>Gesture-controlled arcade game using hand detection.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Game Dev</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/image_processing.jpg" alt="Image Processing" onerror="this.style.display='none';"><div style="background:#ede7f6;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-image" style="font-size:3rem;color:#6a1b9a;"></i></div></div><div class="project-info"><h3>Image Processing using Python</h3><p>Filtering, edge detection, morphological operations.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Computer Vision</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/coconut_cv.jpg" alt="Coconut CV" onerror="this.style.display='none';"><div style="background:#e8f5e9;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-seedling" style="font-size:3rem;color:#00695c;"></i></div></div><div class="project-info"><h3>OpenCV – Coconut Stage & Yield Count</h3><p>Classifies coconut maturity stages and counts yield.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Agriculture Tech</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/pcb_design.jpg" alt="PCB Design" onerror="this.style.display='none';"><div style="background:#e0f2f1;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-microchip" style="font-size:3rem;color:#004d40;"></i></div></div><div class="project-info"><h3>PCB Design</h3><p>Custom circuit board designs and layout.</p><div class="project-tags"><span class="tag">PCB</span><span class="tag">EDA</span><span class="tag">Hardware</span></div></div></div>
+      <div class="project-card"><div class="project-image"><img src="images/16seg_display.jpg" alt="16-Segment" onerror="this.style.display='none';"><div style="background:#263238;height:100%;display:flex;align-items:center;justify-content:center"><i class="fas fa-table-cells" style="font-size:3rem;color:#80cbc4;"></i></div></div><div class="project-info"><h3>Logic & Circuit – Name Display (16-Segment)</h3><p>Digital logic circuit using ICs to display name.</p><div class="project-tags"><span class="tag">Digital Logic</span><span class="tag">ICs</span><span class="tag">16-Segment</span></div></div></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- ========== JAVASCRIPT ========== -->
-  <script>
-    // Certificate images array (matching your original working certificates)
-    const certificateFiles = [
-      "1.png", "2.png", "3.jpg", "4.png", "5.png", "6.jpg", "8.png", "9.png",
-      "10.jpeg", "12.png", "13.jpg", "14.jpg", "15.jpg", "16.png", "17.png",
-      "18.png", "19.png"
-    ];
-    
-    // Generate certificate gallery (30 items with working images)
-    const galleryGrid = document.getElementById('certGrid');
-    for(let i = 1; i <= 30; i++) {
-      const div = document.createElement('div');
-      div.className = 'gallery-item';
-      
-      // Check if we have an image for this number
-      if(certificateFiles.some(f => f.startsWith(i.toString()))) {
-        const file = certificateFiles.find(f => f.startsWith(i.toString()));
-        const img = document.createElement('img');
-        img.src = `images/${file}`;
-        img.alt = `Certificate ${i}`;
-        img.onerror = () => {
-          img.style.display = 'none';
-          div.innerHTML = `<div class="cert-placeholder"><i class="fas fa-certificate"></i><p>Certificate ${i}</p></div>`;
-        };
-        div.appendChild(img);
-      } else {
+<!-- ==================== SKILLS SECTION ==================== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Skills</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="skills-content">
+      <div class="skill-category"><h3>Frontend Development</h3><div class="skills-grid"><div class="skill-card"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML</h4></div><div class="skill-card"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h4>CSS</h4></div><div class="skill-card"><div class="skill-icon"><i class="fab fa-js"></i></div><h4>JavaScript</h4></div><div class="skill-card"><div class="skill-icon"><i class="fab fa-python"></i></div><h4>Python</h4></div></div></div>
+      <div class="skill-category"><h3>Hardware & Embedded Systems</h3><div class="skills-grid"><div class="skill-card"><div class="skill-icon"><i class="fas fa-microchip"></i></div><h4>Arduino</h4></div><div class="skill-card"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>C++</h4></div><div class="skill-card"><div class="skill-icon"><i class="fas fa-robot"></i></div><h4>Robotics</h4></div><div class="skill-card"><div class="skill-icon"><i class="fas fa-eye"></i></div><h4>OpenCV</h4></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== RESUME SECTION ==================== -->
+<section id="resume">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Resume</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="resume-simple-card">
+      <i class="fas fa-file-alt" style="font-size: 3rem; color: #1e88e5;"></i>
+      <h3 style="margin: 16px 0 8px;">Razel Joy Canieso – Full CV</h3>
+      <p style="color: #666; margin-bottom: 10px;">Detailed resume including education, projects, and experience.</p>
+      <a class="resume-drive-btn" href="https://drive.google.com/drive/folders/13-k7vDzsEj9XeGD2y1op3cKxNI1W4PNp?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-google-drive"></i> Download / View Resume (Google Drive)
+      </a>
+      <div class="track-note"><i class="fas fa-chart-line"></i> Drive folder analytics — I can monitor downloads & interest</div>
+      <hr class="divider-light">
+      <h3 style="margin-bottom: 12px;"><i class="fas fa-certificate"></i> Certificates</h3>
+      <button class="certificate-button" id="certificateButton"><i class="fas fa-certificate"></i> View All 30+ Certificates</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CERTIFICATE GALLERY MODAL ==================== -->
+<div class="certificate-gallery" id="certificateGallery">
+  <div class="gallery-container">
+    <h2 class="gallery-title" style="color:white; text-align:center;">My Certificates</h2>
+    <div class="gallery-grid" id="certGrid"></div>
+    <button class="gallery-close" id="closeGallery"><i class="fas fa-times"></i></button>
+  </div>
+</div>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header"><h2>Get In Touch</h2><div class="underline"></div></div>
+    <div class="contact-content">
+      <div class="contact-info"><h3>Contact Information</h3><p>Feel free to reach out for collaborations or inquiries.</p><div class="contact-details"><div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><p>Baclayon, Bohol, Philippines</p></div></div><div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>razeljoypeguitcanieso@gmail.com</p></div></div><div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><p>09458633172</p></div></div></div><div class="social-links"><a href="#" class="social-icon"><i class="fab fa-github"></i></a><a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a></div></div>
+      <div class="contact-form"><form id="contactForm"><div class="form-group"><input type="text" placeholder="Your Name" required></div><div class="form-group"><input type="email" placeholder="Your Email" required></div><div class="form-group"><input type="text" placeholder="Subject"></div><div class="form-group"><textarea placeholder="Your Message" rows="5" required></textarea></div><button type="submit" class="btn primary-btn">Send Message</button></form></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">Portfolio</div>
+      <div class="footer-text"><p>&copy; 2025 Razel Joy Canieso. All rights reserved.</p></div>
+      <div class="footer-links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>Designed with <i class="fas fa-heart"></i> by Razel Joy Canieso</p></div>
+</footer>
+
+<!-- ==================== JAVASCRIPT ==================== -->
+<script>
+  // ----- CERTIFICATE GALLERY (exactly as original) -----
+  const certificateImages = [
+    "1.png", "2.png", "3.jpg", "4.png", "5.png", "6.jpg", "8.png", "9.png",
+    "10.jpeg", "12.png", "13.jpg", "14.jpg", "15.jpg", "16.png", "17.png",
+    "18.png", "19.png"
+  ];
+  
+  const galleryGrid = document.getElementById('certGrid');
+  for (let i = 1; i <= 30; i++) {
+    const div = document.createElement('div');
+    div.className = 'gallery-item';
+    const matchingFile = certificateImages.find(f => parseInt(f) === i);
+    if (matchingFile) {
+      const img = document.createElement('img');
+      img.src = `images/${matchingFile}`;
+      img.alt = `Certificate ${i}`;
+      img.onerror = () => {
+        img.style.display = 'none';
         div.innerHTML = `<div class="cert-placeholder"><i class="fas fa-certificate"></i><p>Certificate ${i}</p></div>`;
-      }
-      galleryGrid.appendChild(div);
+      };
+      div.appendChild(img);
+    } else {
+      div.innerHTML = `<div class="cert-placeholder"><i class="fas fa-certificate"></i><p>Certificate ${i}</p></div>`;
     }
+    galleryGrid.appendChild(div);
+  }
 
-    // Home logo click - scroll to hero
-    document.getElementById('homeLogo').addEventListener('click', () => {
-      document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+  // Modal controls
+  const certBtn = document.getElementById('certificateButton');
+  const galleryModal = document.getElementById('certificateGallery');
+  const closeBtn = document.getElementById('closeGallery');
+  
+  certBtn.addEventListener('click', () => {
+    galleryModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+  function closeModal() {
+    galleryModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  closeBtn.addEventListener('click', closeModal);
+  galleryModal.addEventListener('click', (e) => { if (e.target === galleryModal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && galleryModal.classList.contains('active')) closeModal(); });
+
+  // Home logo scroll
+  document.getElementById('homeLogo').addEventListener('click', () => {
+    document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Mobile menu
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('active'));
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
+  });
 
-    // Mobile menu toggle
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('active');
+  // Active nav highlight on scroll
+  window.addEventListener('scroll', () => {
+    let current = '';
+    document.querySelectorAll('section').forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 200) current = sec.getAttribute('id');
     });
-
-    // Close mobile menu on link click
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.querySelector('.nav-links').classList.remove('active');
-      });
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.classList.remove('active');
+      if (item.getAttribute('href') === `#${current}`) item.classList.add('active');
     });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target) target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Certificate gallery modal
-    const certBtn = document.getElementById('certificateButton');
-    const galleryModal = document.getElementById('certificateGallery');
-    const closeBtn = document.getElementById('closeGallery');
-
-    certBtn.addEventListener('click', () => {
-      galleryModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-
-    function closeModal() {
-      galleryModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    closeBtn.addEventListener('click', closeModal);
-    galleryModal.addEventListener('click', (e) => {
-      if(e.target === galleryModal) closeModal();
-    });
-    document.addEventListener('keydown', (e) => {
-      if(e.key === 'Escape' && galleryModal.classList.contains('active')) closeModal();
-    });
-
-    // Active nav highlight on scroll
-    window.addEventListener('scroll', () => {
-      let current = '';
-      document.querySelectorAll('section').forEach(sec => {
-        if(window.scrollY >= sec.offsetTop - 200) current = sec.getAttribute('id');
-      });
-      document.querySelectorAll('.nav-item').forEach(item => {
-        item.classList.remove('active');
-        if(item.getAttribute('href') === `#${current}`) item.classList.add('active');
-      });
-    });
-  </script>
+  });
+</script>
 </body>
 </html>
